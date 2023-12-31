@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFormApp", "TaskFormApp\TaskFormApp.csproj", "{68F9A6E1-4B57-4670-91A0-4ECB2727F9D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWebApp.API", "TaskWebApp.API\TaskWebApp.API.csproj", "{3BC0FFBA-1210-4B5A-A84F-680C49C612DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskWebApp.API", "TaskWebApp.API\TaskWebApp.API.csproj", "{3BC0FFBA-1210-4B5A-A84F-680C49C612DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskConsoleApp", "TaskConsoleApp\TaskConsoleApp.csproj", "{B22F09C2-FC18-475E-9886-DE7B27FA95F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3BC0FFBA-1210-4B5A-A84F-680C49C612DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC0FFBA-1210-4B5A-A84F-680C49C612DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC0FFBA-1210-4B5A-A84F-680C49C612DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22F09C2-FC18-475E-9886-DE7B27FA95F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22F09C2-FC18-475E-9886-DE7B27FA95F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22F09C2-FC18-475E-9886-DE7B27FA95F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22F09C2-FC18-475E-9886-DE7B27FA95F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
