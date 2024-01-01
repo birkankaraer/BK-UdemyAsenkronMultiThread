@@ -7,18 +7,33 @@ namespace TaskWebApp.API.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
-        [HttpGet]
-        public async Task<IActionResult> GetContentAsync()
+        private readonly ILogger<HomeController> _logger;
+        public HomeController(ILogger<HomeController> logger)
         {
-            var mytask = new HttpClient().GetStringAsync("http://www.google.com");
+            _logger = logger;
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetContentAsync(CancellationToken token)
+        {
+            try
+            {
+                _logger.LogInformation("istek basladi");
 
+                await Task.Delay(5000, token);
 
+                var mytask = new HttpClient().GetStringAsync("http://www.google.com");
 
-            var data = await mytask;
+                var data = await mytask;
 
-            return Ok(data);
-
-
+                _logger.LogInformation("istek bitti");
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation("istek iptal edildi:" + ex.Message);
+                return BadRequest();
+            }
+            
         }
     }
 }
